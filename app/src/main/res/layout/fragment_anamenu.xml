@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anamenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="167dp"
+            android:layout_height="281dp"
+            android:fontFamily="serif"
+            android:text="L"
+            android:textColor="#FD0000"
+            android:textSize="250sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-30dp"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="EARN"
+            android:textColor="#FD0303"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/playmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:foregroundGravity="center"
+                android:onClick="playmenuClick"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Başla"
+                android:textSize="24sp"
+                app:backgroundTint="@color/wrongtextcolor" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settingbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:foregroundGravity="center"
+                android:onClick="settingClick"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Ayarlar"
+                android:textSize="24sp"
+                app:backgroundTint="@color/wrongtextcolor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exitbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:foregroundGravity="center"
+                android:onClick="exitClick"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Çıkış"
+                android:textSize="24sp"
+                app:backgroundTint="@color/wrongtextcolor" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/optionmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/popplay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#00FFFFFF"
+                android:onClick="returnmenuClick"
+                android:paddingStart="20dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Wordleplayclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@color/black"
+                android:onClick="playWordleClick"
+                android:text="Wordle"
+                app:backgroundTint="@color/wrongtextcolor"></com.google.android.material.button.MaterialButton>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/kelimeezberplayclick"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:onClick="playezberClick"
+                android:text="Kelime Eznber."
+                app:backgroundTint="@color/wrongtextcolor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/quizclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:onClick="playQuizClick"
+                android:text="QUİZ"
+                app:backgroundTint="@color/wrongtextcolor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

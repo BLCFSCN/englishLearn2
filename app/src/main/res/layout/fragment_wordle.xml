@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wordle">
+
+    <ImageButton
+        android:id="@+id/quizreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:onClick="returnmenuClick"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Wordleparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button1"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button2"
+                        android:layout_width="60dp"
+
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button9"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button10"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button11"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button12"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button13"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button14"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button15"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button16"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button17"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button18"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button19"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button20"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button21"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button22"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button23"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button24"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp">
+
+                    <ImageButton
+                        android:id="@+id/button25"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@color/defultStatewordl"
+                        android:onClick="buttonclick"
+                        android:tag="x" />
+
+                    <TextView
+                        android:id="@+id/t25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebas_neue"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/white"
+                        android:textSize="34sp" />
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/worldletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="kelime gir"
+            android:inputType="text"
+            android:maxLength="5"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/wordlestartbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/wrongtextcolor"
+        android:onClick="playclick"
+        android:text="Oyuna Başla" />
+
+</FrameLayout>
